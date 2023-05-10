@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <isAvailableInTouch>true</isAvailableInTouch>
+        <page>Survey_Questions__c</page>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <isAvailableInTouch>true</isAvailableInTouch>
+        <page>Survey_Questions__c</page>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <isAvailableInTouch>true</isAvailableInTouch>
+        <page>Survey_Questions__c</page>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object to store Survey Questions</description>
+    <fields>
+        <fullName>Survey_Questions__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey Questions</label>
+        <length>80</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Question_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Question Name</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Question_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Question Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Single_Choice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Multi_Choice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rating</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Survey__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey</label>
+        <referenceTo>Survey__c</referenceTo>
+        <relationshipLabel>Surveys</relationshipLabel>
+        <relationshipName>Survey_Questions__r</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <label>Survey Questions</label>
+    <listViews>
+        <availableWithoutRunAs>true</availableWithoutRunAs>
+        <columns>SURVEY_QUESTIONS__C</columns>
+        <columns>QUESTION_NAME__C</columns>
+        <columns>QUESTION_TYPE__C</columns>
+        <columns>SURVEY__C</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Survey Questions</label>
+    </listViews>
+    <nameField>
+        <label>Survey Questions</label>
+        <type>Text</type>
+    </nameField>
+    <pageLayouts>
+        <fullName>Survey_Questions__c-Survey_Questions_Layout</fullName>
+    </pageLayouts>
+    <pluralLabel>Survey Questions</pluralLabel>
+    <searchLayouts>
+        <fullName>Survey_Questions__c-Survey_Questions_Search</fullName>
+    </searchLayouts>
+    <sharingModel>ReadWrite

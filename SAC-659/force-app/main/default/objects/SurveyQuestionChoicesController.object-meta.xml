@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Survey Question Choices Object</description>
+    <enableActivities>false</enableActivities>
+    <fields>
+        <fullName>Name</fullName>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <required>true</required>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Choice_Name__c</fullName>
+        <description>Choice Name</description>
+        <externalId>false</externalId>
+        <label>Choice Name</label>
+        <length>32768</length>
+        <required>true</required>
+        <type>TextArea</type>
+    </fields>
+    <label>Survey Question Choices</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Name</columns>
+        <columns>Choice_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Survey Question Choices</label>
+        <sortedBy>Name</sortedBy>
+    </listViews>
+    <pluralLabel>Survey Question Choices</pluralLabel>
+    <recordTypes>
+        <fullName>RecordType</fullName>
+        <active>true</active>
+        <defaultRecordTypeMapping>true</defaultRecordTypeMapping>
+        <developerName>RecordType</developerName>
+        <label>RecordType</label>
+    </recordTypes>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Survey_Question_Choices_Object</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Survey Question Choices Object</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <scontrol>null</scontrol>
+        <showHeader>false</showHeader>
+        <url>/apex/Survey_Question_Choices_Object</url>
+        <width>800</width>
+    </webLinks>
+    <pageLayouts>
+        <fullName>Survey_Question_Choices_Object</fullName>
+        <availableForNew>true</availableForNew>
+        <availableForUpdate>true</availableForUpdate>
+        <layoutSections>
+            <fullName>Survey_Question_Choices_Object_Details</fullName>
+            <columns>1</columns>
+            <label>Details</label>
+            <layoutColumns>
+                <fullName>Survey_Question_Choices_Object_Details_col1</fullName>
+                <layoutItems>
+                    <fullName>Name</fullName>
+                </layoutItems>
+                <layoutItems>
+                    <fullName>Choice_Name__c</fullName>
+                </layoutItems>
+            </layoutColumns>
+        </layoutSections>
+        <label>Survey Question Choices Object</label>
+    </pageLayouts>
+    <searchLayouts>
+        <fullName>Survey_Question_Choices_Object</fullName>
+        <listViews>
+            <fullName>All
